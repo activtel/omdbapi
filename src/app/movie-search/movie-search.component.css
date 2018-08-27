@@ -1,0 +1,22 @@
+ .movie-form {
+   min-width: 150px;
+   max-width: 80%;
+   width: 100%;
+ }
+
+ .movie-full-width {
+   width: 100%;
+ }
+
+ .movie-option-img {
+   vertical-align: middle;
+   margin-right: 8px;
+ }
+
+ mat-progress-spinner {
+   visibility: hidden;
+ }
+
+ .visibility {
+   visibility: visible;
+ }

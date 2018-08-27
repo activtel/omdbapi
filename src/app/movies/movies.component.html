@@ -1,0 +1,10 @@
+<h2>Список фильмов</h2>
+<mat-list>
+  <mat-list-item *ngFor="let movie of movies">
+    {{movie.Title | uppercase}}
+    <button mat-raised-button color="warn" (click)="delete(movie)">
+      Удалить
+      <mat-icon matListIcon>delete</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,18 @@
+.movie-card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.movie-option-img {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+mat-progress-spinner {
+    visibility: hidden;
+    margin: 0 auto;
+}
+
+.visibility {
+    visibility: visible;
+}

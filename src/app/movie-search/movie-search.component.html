@@ -1,0 +1,16 @@
+<div id="search-component">
+  <h2>Поиск фильма</h2>
+  <form class="movie-form">
+    <mat-form-field class="movie-full-width">
+      <input type="text" placeholder="Введите название фильма" matInput [matAutocomplete]="auto" #searchMovie id="search-movie"
+        (keyup)="search(searchMovie.value)">
+      <mat-progress-spinner [ngClass]="{visibility:loader}" mode="indeterminate" diameter="25" matSuffix></mat-progress-spinner>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let movie of movies" [value]="option" routerLink="/movie/{{movie.imdbID}}">
+          <img *ngIf="movie.Poster !=='N/A'" class="movie-option-img" aria-hidden [src]="movie.Poster" height="25">
+          <span>{{movie.Title | uppercase}}</span>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+</div>

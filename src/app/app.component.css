@@ -1,0 +1,17 @@
+.content {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.content div {
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content div:first-child {
+    margin-right: 25px;
+}

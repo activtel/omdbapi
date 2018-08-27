@@ -1,0 +1,21 @@
+<mat-progress-spinner [ngClass]="{visibility:loader}" mode="indeterminate" diameter="50" matSuffix></mat-progress-spinner>
+<div *ngIf="movie">
+  <mat-card class="movie-card">
+    <mat-card-header>
+      <div mat-card-avatar class="movie-header-image"></div>
+      <mat-card-title>
+        <h2>{{movie.Title | uppercase}}</h2>
+      </mat-card-title>
+      <mat-card-subtitle>{{movie.Year}}</mat-card-subtitle>
+    </mat-card-header>
+    <img *ngIf="movie.Poster !=='N/A'" mat-card-image src="{{movie.Poster}}" class="movie-option-img">
+    <mat-card-content>
+      <p>{{movie.Plot}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="add(movie)">Добавить в список
+        <mat-icon matListIcon>add</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
