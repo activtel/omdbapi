@@ -1,2 +1,2 @@
 # omdbapi
-Клиент к 
+Клиент к http://omdbapi.com/
